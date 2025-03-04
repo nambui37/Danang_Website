@@ -1,49 +1,97 @@
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
     text-align: center;
 }
 
-header {
-    background-color: #3e7689;
+
+nav {
+    background: linear-gradient(135deg, #0077cc, #e048c9);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
     color: white;
-    padding: 5px;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 30px;
+}
+
+
+section {
+    margin: 40px auto;
+    max-width: 900px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #e649cb;
+    color: #0077cc;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
+/* Danh sách địa điểm */
 ul {
     list-style-type: none;
-    padding: 0;
 }
 
 ul li {
-    margin: 5px 0;
-}
-
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 50%;
-}
-
-table, th, td {
-    border: 1px solid black;
+    background: #e3f2fd;
     padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
 }
 
 footer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #3e7689;
+    margin-top: 30px;
+    background: #0077cc;
     color: white;
-}
-
-img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    padding: 15px;
 }
